@@ -8,9 +8,14 @@ class DuckTest {
 
 	@Test
 	void initialToString() {
-		Driver driver = new Driver("white",12);
+		Ducks ducks = new Ducks("white",12);
 		String expected = "Ducks{color='white','age='12'}";
-		assertEquals(expected,driver.toString());
+		assertEquals(expected,ducks.toString());
 	}
-
+	@Test
+	void defaultCostructor() {
+		Ducks blankDucks = new Ducks();
+		String expected = "Ducks{color='','age='0'}";
+		assertEquals(expected,blankDucks.toString());
+	}
 }

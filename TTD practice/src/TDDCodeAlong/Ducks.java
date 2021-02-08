@@ -1,6 +1,6 @@
 package TDDCodeAlong;
 
-public class Driver {
+public class Ducks {
 	private String color;
 	private int age;
 	public int getAge() {
@@ -15,9 +15,13 @@ public class Driver {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	public Driver(String color,int age) {
+	public Ducks(String color,int age) {
 		this.color = color;
 		this.age = age;
+	}
+	public Ducks() {
+		age = 0;
+		color = "";
 	}
 	public String toString() {
 		return "Ducks{color='"+color+"','age='"+age+"'}";
